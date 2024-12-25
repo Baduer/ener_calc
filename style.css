@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    background-color: #202030;
+    display: flex;
+    justify-content: center;
+}
+
+main {    
+    width: 1140px;
+    height: 1469px;
+    border: 3px solid green;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;    
+}
+
+.button-contact {
+    width: 104.2px;
+    height: 31.54px;
+    border-radius: 3.32px;
+    background-color: transparent;
+    border: 0.66px solid;
+    font-size: 10.62px;
+    font-family: sans-serif;
+    color: #FFFFFF;       
+}
+
+.container-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+    margin-top: 60px;
+}
+
+.text {
+    height: 160px;
+}
+
+.male {
+    width: 200px;
+}  
+
+.text-info {
+    width: 673px;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #FFFFFF;
+    margin: 0 80px 0;
+
+}
+
+.welcome {
+    position: relative;
+}
+
+.icon-onda,
+.icon-circulo,
+.icon-play,
+.icon-plus {
+    position: absolute;
+}
+
+.icon-onda {
+    left: 600px;
+    top: 45px;
+}
