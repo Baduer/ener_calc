@@ -5,12 +5,11 @@
 }
 
 html {
-    background-color: #202030;
-    display: flex;
-    justify-content: center;
+    background-color: #202030;    
 }
 
-main {    
+.container { 
+    margin: 0 auto;   /* deixando o container centralizado*/
     width: 1140px;
     height: 1469px;
     border: 3px solid green;
@@ -31,7 +30,8 @@ nav {
     border: 0.66px solid;
     font-size: 10.62px;
     font-family: sans-serif;
-    color: #FFFFFF;       
+    color: #FFFFFF;   
+    cursor: pointer;    
 }
 
 .container-welcome {
@@ -53,7 +53,7 @@ nav {
 .text-info {
     width: 673px;
     font-size: 18px;
-    font-family: Helvetica;
+    font-family: nunitos fans;
     color: #FFFFFF;
     margin: 0 80px 0;
 
@@ -73,4 +73,54 @@ nav {
 .icon-onda {
     left: 600px;
     top: 45px;
+}
+
+.icon-onda img {
+    width: 40px;
+    height: 22px;
+}
+
+.icon-play {
+    left: 550px;  
+    top: 275px;  
+}
+
+.icon-play img {
+    width: 37px;
+    height: 40px;
+}
+
+.icon-plus {
+    left: 920px;
+    top: 210px;
+}
+
+.icon-plus img {
+    width: 21px;
+    height: 21px;    
+}
+
+.icon-circulo {
+    left: 910px;
+    top: -10px;
+}
+
+.icon-circulo img {
+    width: 25px;
+    height: 30px;
+}
+
+.text-formula h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 35px;
+    color: #FFFFFF;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #19191B;
+
 }
