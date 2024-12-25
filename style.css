@@ -11,8 +11,7 @@ html {
 .container { 
     margin: 0 auto;   /* deixando o container centralizado*/
     width: 1140px;
-    height: 1469px;
-    border: 3px solid green;
+    height: 1100px;    
 }
 
 nav {
@@ -122,5 +121,81 @@ footer {
     width: 100%;
     height: 100px;
     background-color: #19191B;
-
 }
+
+.container-fomr {
+    width: 800px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 50px auto;
+}
+
+.elementos {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    text-align: center;  
+    padding: 10px;  
+    margin-top: 35px;
+}
+
+.calc-container1,
+.calc-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-potencia,
+.icons-corrente,
+.icons-consumo,
+.icons-tensao,
+.icons-distancia,
+.icons-disjuntor {
+    width: 50px;
+    height: 50px;    
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.icons-potencia {
+    background-color: rgba(84, 84, 212, 0.1);    
+}
+
+.icons-corrente {
+    background-color: rgba(240, 64, 55, 0.1);    
+}
+
+.icons-consumo {
+    background-color: rgba(254, 220, 90, 0.1);    
+}
+
+.icons-tensao {
+    background-color: rgba(254, 220, 90, 0.1);    
+}
+
+.icons-distancia {
+    background-color: rgba(84, 84, 212, 0.1);    
+}
+
+.icons-disjuntor {
+    background-color: rgba(240, 64, 55, 0.1);    
+}
+
+.icons-potencia img,
+.icons-corrente img,
+.icons-consumo img,
+.icons-tensao img,
+.icons-distancia img,
+.icons-disjuntor img {   
+    margin: 15px auto;
+}
+
+.button-icons {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
