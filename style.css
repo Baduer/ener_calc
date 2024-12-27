@@ -8,6 +8,10 @@ html {
     background-color: #202030;    
 }
 
+body {
+    position: relative;
+}
+
 .container { 
     margin: 0 auto;   /* deixando o container centralizado*/
     width: 1140px;
@@ -54,7 +58,7 @@ nav {
     font-size: 18px;
     font-family: nunitos fans;
     color: #FFFFFF;
-    margin: 0 80px 0;
+    margin: 0 130px 0;
 
 }
 
@@ -138,6 +142,17 @@ footer {
     margin-top: 35px;
 }
 
+.elementos h3 {
+  color: #FFFFFF;
+}
+
+.elementos p {
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    font-size: 13px;
+    margin-top: 15px;
+  }
+
 .calc-container1,
 .calc-container2 {
     display: flex;
@@ -195,6 +210,179 @@ footer {
     border: none;
     cursor: pointer;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer {
+    display: flex;
+    gap: 80px;   
+}
+
+.container-footer img {
+    margin-right: 110px;
+    width: 80px;
+    height: 20px; 
+}
+
+.container-footer p {
+    color: rgba(255, 255, 255, 0.4); 
+    font-size: 13px;
+}
+
+.container-footer button {
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.4); 
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.icon-calculadora {
+    position: absolute;
+    top: 877px;
+    right: 930px;
+}
+
+/*showModal*/
+
+.container-modal {
+    width: 500px;
+    margin: auto;
+}
+
+form {
+    width: 100px;
+    margin-left: 40px;
+}
+
+.modal-potencia,
+.modal-consumo,
+.modal-corrente,
+.modal-tensao,
+.modal-distancia,
+.modal-disjuntor {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 700px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-potencia h3,
+.modal-consumo h3,
+.modal-corrente h3,
+.modal-tensao h3,
+.modal-distancia h3,
+.modal-disjuntor h3 {
+    margin: 3px;
+    padding: 25px;      
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.text-title { 
+    margin-left: 150px;  
+    text-align: center;
+}
+
+.reight-modal {
+    display: flex;
+    align-items: center;    
+    margin-left: 100px;
+    
+}
+
+.result-modal {      
+    align-items: center;
+    width: 140px;
+    height: 33px;
+    border-radius: 8px;
+    background-color: rgba(207, 164, 114, 0.8);
+    padding: 10px;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.6);   
+    font-size: 30px;    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.label-modal {
+    color: rgba(255, 255, 255, 0.7);   
+}
+
+
+input {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 0;
+}
+
+button {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    background-color: #5454D4;
+    width: 166px;
+    height: 44px;
+    cursor:pointer;      
+}
+
+.botton-modal {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    height: 45px;
+    
+}
+
+.button-back {
+    background-color: transparent;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.modal-potencia {
+    display: none;
+
+}
+
+.modal-consumo {
+    display: none;
+}
+
+.modal-corrente {
+    display: none;
+}
+
+.modal-tensao {
+    display: none;
+}
+
+.modal-distancia {
+    display: none;
+}
+
+.modal-disjuntor {
+    display: none;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
