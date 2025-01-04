@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    background-color: #202030;    
+}
+
+body {
+    position: relative;
+}
+
+.container { 
+    margin: 0 auto;   /* deixando o container centralizado*/
+    width: 1140px;
+    height: 1100px;    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;    
+}
+
+li {
+   list-style: none;   
+}
+
+.button-contact {
+    width: 104.2px;
+    height: 31.54px;
+    border-radius: 3.32px;
+    background-color: transparent;
+    border: 0.66px solid;
+    font-size: 10.62px;
+    font-family: sans-serif;
+    color: #FFFFFF;   
+    cursor: pointer;    
+}
+
+.container-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+    margin-top: 60px;
+}
+
+.text {
+    height: 160px;
+}
+
+.male {
+    width: 200px;
+}  
+
+.text-info {
+    width: 673px;
+    font-size: 18px;
+    font-family: nunitos fans;
+    color: #FFFFFF;
+    margin: 0 130px 0;
+
+}
+
+.welcome {
+    position: relative;
+}
+
+.icon-onda,
+.icon-circulo,
+.icon-play,
+.icon-plus {
+    position: absolute;
+}
+
+.icon-onda {
+    left: 600px;
+    top: 45px;
+}
+
+.icon-onda img {
+    width: 40px;
+    height: 22px;
+}
+
+.icon-play {
+    left: 550px;  
+    top: 275px;  
+}
+
+.icon-play img {
+    width: 37px;
+    height: 40px;
+}
+
+.icon-plus {
+    left: 920px;
+    top: 210px;
+}
+
+.icon-plus img {
+    width: 21px;
+    height: 21px;    
+}
+
+.icon-circulo {
+    left: 910px;
+    top: -10px;
+}
+
+.icon-circulo img {
+    width: 25px;
+    height: 30px;
+}
+
+.text-formula h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 35px;
+    color: #FFFFFF;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #19191B;
+}
+
+.container-fomr {
+    width: 800px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 50px auto;
+}
+
+.elementos {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    text-align: center;  
+    padding: 10px;  
+    margin-top: 35px;
+}
+
+.elementos h3 {
+  color: #FFFFFF;
+}
+
+.elementos p {
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    font-size: 13px;
+    margin-top: 15px;
+  }
+
+.calc-container1,
+.calc-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-potencia,
+.icons-corrente,
+.icons-consumo,
+.icons-tensao,
+.icons-distancia,
+.icons-disjuntor {
+    width: 50px;
+    height: 50px;    
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.icons-potencia {
+    background-color: rgba(84, 84, 212, 0.1);    
+}
+
+.icons-corrente {
+    background-color: rgba(240, 64, 55, 0.1);    
+}
+
+.icons-consumo {
+    background-color: rgba(254, 220, 90, 0.1);    
+}
+
+.icons-tensao {
+    background-color: rgba(254, 220, 90, 0.1);    
+}
+
+.icons-distancia {
+    background-color: rgba(84, 84, 212, 0.1);    
+}
+
+.icons-disjuntor {
+    background-color: rgba(240, 64, 55, 0.1);    
+}
+
+.icons-potencia img,
+.icons-corrente img,
+.icons-consumo img,
+.icons-tensao img,
+.icons-distancia img,
+.icons-disjuntor img {   
+    margin: 15px auto;
+}
+
+.button-icons {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer {
+    display: flex;    
+    align-items: center;   
+    gap: 190px;       
+}
+
+.container-footer img {
+    
+    width: 80px;
+    height: 20px; 
+}
+
+.container-footer p {
+    color: rgba(255, 255, 255, 0.4); 
+    font-size: 13px;
+}
+
+ 
+.button-footer {    
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.4); 
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.icon-calculadora {
+    position: absolute;
+    top: 877px;
+    right: 960px;
+}
+
+/*showModal*/
+
+.container-modal {
+    width: 500px;
+    margin: auto;
+}
+
+form {
+    width: 100px;
+    margin-left: 40px;
+}
+
+.modal-potencia,
+.modal-consumo,
+.modal-corrente,
+.modal-tensao,
+.modal-distancia,
+.modal-disjuntor {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 700px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-potencia h3,
+.modal-consumo h3,
+.modal-corrente h3,
+.modal-tensao h3,
+.modal-distancia h3,
+.modal-disjuntor h3 {
+    margin: 3px;
+    padding: 25px;      
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.text-title { 
+    margin-left: 150px;  
+    text-align: center;
+}
+
+.reight-modal {
+    display: flex;
+    align-items: center;    
+    margin-left: 100px;
+    
+}
+
+.result-modal {      
+    align-items: center;
+    width: 140px;
+    height: 33px;
+    border-radius: 8px;
+    background-color: rgba(207, 164, 114, 0.8);
+    padding: 10px;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.6);   
+    font-size: 30px;    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.label-modal {
+    color: rgba(255, 255, 255, 0.7);   
+}
+
+
+input {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 0;
+}
+
+.button-calc {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    background-color: #5454D4;
+    width: 166px;
+    height: 44px;
+    cursor:pointer;      
+}
+
+.botton-modal {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    height: 45px;
+    
+}
+
+.button-back {
+    background-color: transparent;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.modal-potencia {
+    display: none;
+
+}
+
+.modal-consumo {
+    display: none;
+}
+
+.modal-corrente {
+    display: none;
+}
+
+.modal-tensao {
+    display: none;
+}
+
+.modal-distancia {
+    display: none;
+}
+
+.modal-disjuntor {
+    display: none;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

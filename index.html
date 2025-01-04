@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnerCalc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav id="menu">
+            <div class="container-menu">
+                <div class="logo">
+                    <img src="img/logo.png" alt="EnerCalc">
+                </div>
+            </div>
+            <ul>
+                <li><button class="button-contact" id="button-contact">Contato</button></li>
+            </ul>
+        </nav>
+
+        <section class="welcome">
+            <div class="container-welcome">
+                <div class="text">
+                    <img src="img/welcome.png" alt="Bem-vindo">
+                </div>
+                <div class="img-male">
+                    <img class="male" src="img/male.png" alt="Informação">
+                </div>
+            </div>
+            <div class="text-info">
+                <p>Aqui você encontra alguns cálculos simples de usar para estimar a potência, corrente, tensão, bitola,
+                    disjuntor e consumo de energia elétrica.</p>
+            </div>
+
+            <div class="icon-onda"><img src="img/icon-onda.png"></div>
+            <div class="icon-circulo"><img src="img/icon-circulo.png"></div>
+            <div class="icon-play"><img src="img/icon-play.png"></div>
+            <div class="icon-plus"><img src="img/icon-plus.png"></div>
+        </section>
+
+        <div class="text-formula">
+            <h3>Use as fórmulas para chegar no resultado</h3>
+        </div>
+
+        <main id="pages-form">
+            <div class="container-fomr">
+                <div class="calc-container1">
+                    <div class="elementos">
+                        <div class="icons-potencia">
+                            <button class="button-icons"><img src="img/icon-potencia.png"
+                                    alt="Calcular a potência"></button>
+                        </div>
+                        <h3>Potência</h3>
+                        <p>Calcule a potência dos aparelho e equipamento.</p>
+                    </div>
+
+                    <div class="elementos">
+                        <div class="icons-corrente">
+                            <button class="button-icons"><img src="img/icon-corrente.png"
+                                    alt="Calcular a corrente"></button>
+                        </div>
+                        <h3>Corrente</h3>
+                        <p>Calcule a corrente de cada aparelho e equipamento.</p>
+                    </div>
+
+                    <div class="elementos">
+                        <div class="icons-consumo">
+                            <button class="button-icons"><img src="img/icon-consumo.png"
+                                    alt="Calcular o consumo"></button>
+                        </div>
+                        <h3>Consumo</h3>
+                        <p>Calcule o consumo de energia do seu imóvel.</p>
+                    </div>
+                </div>
+                <div class="calc-container2">
+                    <div class="elementos">
+                        <div class="icons-tensao">
+                            <button class="button-icons"><img src="img/icon-tensao.png"
+                                    alt="Calcular a tensão"></button>
+                        </div>
+                        <h3>Tensão</h3>
+                        <p>Calcular a tensão de um aparelho ou equipamento.</p>
+                    </div>
+
+                    <div class="elementos">
+                        <div class="icons-distancia">
+                            <button class="button-icons"><img src="img/icon-distancia.png"
+                                    alt="Calcular a distância"></button>
+                        </div>
+                        <h3>Longa distância</h3>
+                        <p>Calcule a bitola do cabo para ser usado em longa distância.</p>
+                    </div>
+
+                    <div class="elementos">
+                        <div class="icons-disjuntor">
+                            <button class="button-icons"><img src="img/icon-disjuntor.png"
+                                    alt="Calcular o disjuntor"></button>
+                        </div>
+                        <h3>Disjuntor</h3>
+                        <p>Calcule qual disjuntor será usado para um aparelho ou circuito.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <div class="container-modal">
+        <div class="modal-potencia">
+            <div class="container-form">
+                <div class="button-back">
+                    <button class="button-back" id="back-btn"><img src="img/icon-back.png"
+                            alt="Voltar para o HOME"></button>
+                </div>
+                <div class="text-title">
+                    <h3>Potência</h3>
+                </div>
+                <form class="form-modal">
+                    <label class="label-modal" for="potencia-tensao">Tensão</label>
+                    <input id="potencia-tensao" type="number">
+                    <label class="label-modal" for="potencia-corrente">Corrente</label>
+                    <input id="-potencia-corrente" type="number">
+                </form>
+                <div class="botton-modal">
+                    <button class="button-calc" id="button-potencia">Calcular</button>
+                </div>
+            </div>
+            <div class="reight-modal">
+                <div class="result-modal" id="result-potencia"></div>
+            </div>
+        </div>
+
+        <div class="modal-consumo">
+            <div class="container-form">
+                <div class="button-back">
+                    <button class="button-back" id="back-btn"><img src="img/icon-back.png"
+                            alt="Voltar para o HOME"></button>
+                </div>
+                <div class="text-title">
+                    <h3>Consumo</h3>
+                </div>
+                <div class="form">
+                    <form class="form-modal">
+                        <label class="label-modal" for="consumo-potencia">Potência</label>
+                        <input id="consumo-potencia" type="number">
+                        <label class="label-modal" for="consumo-dias">Dias</label>
+                        <input id="consumo-dias" type="number">
+                    </form>
+                </div>
+                <div class="botton-modal">
+                    <button class="button-calc" id="button-consumo">Calcular</button>
+                </div>
+            </div>
+            <div class="reight-modal">
+                <div class="result-modal" id="result-consumo"></div>
+            </div>
+        </div>
+
+        <div class="modal-corrente">
+            <div class="container-form">
+                <div class="button-back">
+                    <button class="button-back" id="back-btn"><img src="img/icon-back.png"
+                            alt="Voltar para o HOME"></button>
+                </div>
+                <div class="text-title">
+                    <h3>Corrente</h3>
+                </div>
+                <form class="form-modal">
+                    <label class="label-modal" for="corrente-potencia">Potência</label>
+                    <input id="corrente-potencia" type="number">
+                    <label class="label-modal" for="corrente-tensao">Tensão</label>
+                    <input id="corrente-tensao" type="number">
+                </form>
+                <div class="botton-modal">
+                    <button class="button-calc" id="button-corrente">Calcular</button>
+                </div>
+            </div>
+            <div class="reight-modal">
+                <div class="result-modal" id="result-corrente"></div>
+            </div>
+        </div>
+
+
+        <div class="modal-tensao">
+            <div class="container-form">
+                <div class="button-back">
+                    <button class="button-back" id="back-btn"><img src="img/icon-back.png"
+                            alt="Voltar para o HOME"></button>
+                </div>
+                <div class="text-title">
+                    <h3>Tensão</h3>
+                </div>
+                <form class="form-modal">
+                    <label class="label-modal" for="tensao-potencia">Potencia</label>
+                    <input id="tensao-potencia" type="number">
+                    <label class="label-modal" for="tensao-corrente">Corrente</label>
+                    <input id="tensao-corrente" type="number">
+                </form>
+                <div class="botton-modal">
+                    <button class="button-calc" id="button-tensao">Calcular</button>
+                </div>
+            </div>
+            <div class="reight-modal">
+                <div class="result-modal" id="result-tensao"></div>
+            </div>
+        </div>
+
+
+        <div class="modal-distancia">
+            <div class="container-form">
+                <div class="button-back">
+                    <button class="button-back" id="back-btn"><img src="img/icon-back.png"
+                            alt="Voltar para o HOME"></button>
+                </div>
+                <div class="text-title">
+                    <h3>Distância</h3>
+                </div>
+                <form class="form-modal">
+                    <label class="label-modal" for="distancia-metro"></label>
+                    <input id="distancia-metro" type="number">
+                    <label class="label-modal" for="distancia-tensao">Tensão</label>
+                    <input id="disntancia-tensao" type="number">
+                    <label class="label-modal" for="distancia-corrente">Corrente</label>
+                    <input type="number">
+                </form>
+                <div class="botton-modal">
+                    <button class="button-calc" id="button-distancia">Calcular</button>
+                </div>
+            </div>
+            <div class="reight-modal">
+                <div class="result-modal" id="result-distancia"></div>
+            </div>
+        </div>
+
+
+        <div class="modal-disjuntor">
+            <div class="container-form">
+                <div class="button-back">
+                    <button class="button-back" id="back-btn"><img src="img/icon-back.png"
+                            alt="Voltar para o HOME"></button>
+                </div>
+                <div class="text-title">
+                    <h3>Disjuntor</h3>
+                </div>
+                <form class="form-modal">
+                    <label class="label-modal" for="disjuntor-potencia">Potência</label>
+                    <input id="disjuntor-potencia" type="number">
+                    <label class="label-modal" for="disjuntor-tensao">Tensão</label>
+                    <input id="disjuntor-tensao" type="number">
+                </form>
+                <div class="botton-modal">
+                    <button class="button-calc" id="button-disjuntor">Calcular</button>
+                </div>
+            </div>
+            <div class="reight-modal">
+                <div class="result-modal" id="result-disjuntor"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="icon-calculadora">
+        <img src="img/icon-calculator.png" alt="Calculadora">
+    </div>
+
+</body>
+
+<footer>  
+    <div class="container-footer">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="EnerCalc">
+        </div>
+        
+        <div class="footer-bnt">
+            <button class="button-footer">Suporte</button>
+        </div>
+        <div class="text-footer">
+            <p>&copy;2024 EnerCalc. Todo Direito Reservado</p>
+        </div>       
+    </div>
+   
+</footer>
+
+</html>
