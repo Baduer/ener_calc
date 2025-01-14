@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnerCalc</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -50,7 +51,7 @@
                 <div class="calc-container1">
                     <div class="elementos">
                         <div class="icons-potencia">
-                            <button class="button-icons"><img src="img/icon-potencia.png"
+                            <button id="calc-potencia" class="button-icons"><img src="img/icon-potencia.png"
                                     alt="Calcular a potência"></button>
                         </div>
                         <h3>Potência</h3>
@@ -59,7 +60,7 @@
 
                     <div class="elementos">
                         <div class="icons-corrente">
-                            <button class="button-icons"><img src="img/icon-corrente.png"
+                            <button id="calc-corrente" class="button-icons"><img src="img/icon-corrente.png"
                                     alt="Calcular a corrente"></button>
                         </div>
                         <h3>Corrente</h3>
@@ -68,7 +69,7 @@
 
                     <div class="elementos">
                         <div class="icons-consumo">
-                            <button class="button-icons"><img src="img/icon-consumo.png"
+                            <button id="calc-consumo" class="button-icons"><img src="img/icon-consumo.png"
                                     alt="Calcular o consumo"></button>
                         </div>
                         <h3>Consumo</h3>
@@ -78,7 +79,7 @@
                 <div class="calc-container2">
                     <div class="elementos">
                         <div class="icons-tensao">
-                            <button class="button-icons"><img src="img/icon-tensao.png"
+                            <button id="calc-tensao" class="button-icons"><img src="img/icon-tensao.png"
                                     alt="Calcular a tensão"></button>
                         </div>
                         <h3>Tensão</h3>
@@ -87,20 +88,20 @@
 
                     <div class="elementos">
                         <div class="icons-distancia">
-                            <button class="button-icons"><img src="img/icon-distancia.png"
+                            <button id="calc-distancia" class="button-icons"><img src="img/icon-distancia.png"
                                     alt="Calcular a distância"></button>
                         </div>
                         <h3>Longa distância</h3>
-                        <p>Calcule a bitola do cabo para ser usado em longa distância.</p>
+                        <p>Calcule a bitola do cabo para Distância.</p>
                     </div>
 
                     <div class="elementos">
                         <div class="icons-disjuntor">
-                            <button class="button-icons"><img src="img/icon-disjuntor.png"
+                            <button id="calc-disjuntor" class="button-icons"><img src="img/icon-disjuntor.png"
                                     alt="Calcular o disjuntor"></button>
                         </div>
-                        <h3>Disjuntor</h3>
-                        <p>Calcule qual disjuntor será usado para um aparelho ou circuito.</p>
+                        <h3>Cabo</h3>
+                        <p>Cabo usado para uma determinada corrente.</p>
                     </div>
                 </div>
             </div>
@@ -109,7 +110,7 @@
     </div>
 
     <div class="container-modal">
-        <div class="modal-potencia">
+        <div id="modal-potencia" class="modal-potencia">
             <div class="container-form">
                 <div class="button-back">
                     <button class="button-back" id="back-btn"><img src="img/icon-back.png"
@@ -122,7 +123,7 @@
                     <label class="label-modal" for="potencia-tensao">Tensão</label>
                     <input id="potencia-tensao" type="number">
                     <label class="label-modal" for="potencia-corrente">Corrente</label>
-                    <input id="-potencia-corrente" type="number">
+                    <input id="potencia-corrente" type="number">
                 </form>
                 <div class="botton-modal">
                     <button class="button-calc" id="button-potencia">Calcular</button>
@@ -133,10 +134,10 @@
             </div>
         </div>
 
-        <div class="modal-consumo">
+        <div id="modal-consumo" class="modal-consumo">
             <div class="container-form">
                 <div class="button-back">
-                    <button class="button-back" id="back-btn"><img src="img/icon-back.png"
+                    <button class="button-back" id="back-btn-consumo"><img src="img/icon-back.png"
                             alt="Voltar para o HOME"></button>
                 </div>
                 <div class="text-title">
@@ -159,10 +160,10 @@
             </div>
         </div>
 
-        <div class="modal-corrente">
+        <div id="modal-corrente" class="modal-corrente">
             <div class="container-form">
                 <div class="button-back">
-                    <button class="button-back" id="back-btn"><img src="img/icon-back.png"
+                    <button class="button-back" id="back-btn-corrente"><img src="img/icon-back.png"
                             alt="Voltar para o HOME"></button>
                 </div>
                 <div class="text-title">
@@ -184,10 +185,10 @@
         </div>
 
 
-        <div class="modal-tensao">
+        <div id="modal-tensao" class="modal-tensao">
             <div class="container-form">
                 <div class="button-back">
-                    <button class="button-back" id="back-btn"><img src="img/icon-back.png"
+                    <button class="button-back" id="back-btn-tensao"><img src="img/icon-back.png"
                             alt="Voltar para o HOME"></button>
                 </div>
                 <div class="text-title">
@@ -209,22 +210,23 @@
         </div>
 
 
-        <div class="modal-distancia">
+        <div id="modal-distancia" class="modal-distancia">
             <div class="container-form">
                 <div class="button-back">
-                    <button class="button-back" id="back-btn"><img src="img/icon-back.png"
+                    <button class="button-back" id="back-btn-distancia"><img src="img/icon-back.png"
                             alt="Voltar para o HOME"></button>
                 </div>
                 <div class="text-title">
                     <h3>Distância</h3>
+
                 </div>
                 <form class="form-modal">
-                    <label class="label-modal" for="distancia-metro"></label>
+                    <label class="label-modal" for="distancia-metro">Metros</label>
                     <input id="distancia-metro" type="number">
                     <label class="label-modal" for="distancia-tensao">Tensão</label>
                     <input id="disntancia-tensao" type="number">
                     <label class="label-modal" for="distancia-corrente">Corrente</label>
-                    <input type="number">
+                    <input class="distancia-corrente" id="distancia-corrente" type="number">
                 </form>
                 <div class="botton-modal">
                     <button class="button-calc" id="button-distancia">Calcular</button>
@@ -233,30 +235,32 @@
             <div class="reight-modal">
                 <div class="result-modal" id="result-distancia"></div>
             </div>
+
+
         </div>
 
 
-        <div class="modal-disjuntor">
+        <div id="modal-disjuntor" class="modal-disjuntor">
             <div class="container-form">
                 <div class="button-back">
-                    <button class="button-back" id="back-btn"><img src="img/icon-back.png"
+                    <button class="button-back" id="back-btn-disjuntor"><img src="img/icon-back.png"
                             alt="Voltar para o HOME"></button>
                 </div>
                 <div class="text-title">
-                    <h3>Disjuntor</h3>
+                    <h3>Cabo</h3>
                 </div>
                 <form class="form-modal">
-                    <label class="label-modal" for="disjuntor-potencia">Potência</label>
-                    <input id="disjuntor-potencia" type="number">
-                    <label class="label-modal" for="disjuntor-tensao">Tensão</label>
-                    <input id="disjuntor-tensao" type="number">
+                    <label class="label-modal" for="disjuntor-potencia">Corrente (A)</label>
+                    <input id="cabo-corrente" type="number">
+                    <!--<label class="label-modal" for="disjuntor-tensao">Tensão</label>-->
+                    <!--<input id="disjuntor-tensao" type="number">-->
                 </form>
                 <div class="botton-modal">
-                    <button class="button-calc" id="button-disjuntor">Calcular</button>
+                    <button class="button-calc" id="button-cabo">Calcular</button>
                 </div>
             </div>
             <div class="reight-modal">
-                <div class="result-modal" id="result-disjuntor"></div>
+                <div class="result-modal" id="result-cabo"></div>
             </div>
         </div>
 
@@ -264,23 +268,25 @@
     <div class="icon-calculadora">
         <img src="img/icon-calculator.png" alt="Calculadora">
     </div>
+    <div id="overlay" class="overlay"></div>
+    <script src="script.js"></script>
 
 </body>
 
-<footer>  
+<footer>
     <div class="container-footer">
         <div class="footer-logo">
             <img src="img/logo.png" alt="EnerCalc">
         </div>
-        
+
         <div class="footer-bnt">
             <button class="button-footer">Suporte</button>
         </div>
         <div class="text-footer">
-            <p>&copy;2024 EnerCalc. Todo Direito Reservado</p>
-        </div>       
+            <p>&copy;2024 EnerCalc. Todos os Direitos Reservados</p>
+        </div>
     </div>
-   
+
 </footer>
 
 </html>

@@ -10,12 +10,12 @@ html {
 
 body {
     position: relative;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container { 
     margin: 0 auto;   /* deixando o container centralizado*/
-    width: 1140px;
-    height: 1100px;    
+    width: 1140px;        
 }
 
 nav {
@@ -35,8 +35,7 @@ li {
     border-radius: 3.32px;
     background-color: transparent;
     border: 0.66px solid;
-    font-size: 10.62px;
-    font-family: sans-serif;
+    font-size: 10.62px;    
     color: #FFFFFF;   
     cursor: pointer;    
 }
@@ -49,8 +48,8 @@ li {
     margin-top: 60px;
 }
 
-.text {
-    height: 160px;
+.text img{
+    height: 170px;
 }
 
 .male {
@@ -60,7 +59,6 @@ li {
 .text-info {
     width: 673px;
     font-size: 18px;
-    font-family: nunitos fans;
     color: #FFFFFF;
     margin: 0 130px 0;
 
@@ -89,7 +87,7 @@ li {
 
 .icon-play {
     left: 550px;  
-    top: 275px;  
+    top: 293px;  
 }
 
 .icon-play img {
@@ -117,8 +115,7 @@ li {
     height: 30px;
 }
 
-.text-formula h3 {
-    font-family: 'Courier New', Courier, monospace;
+.text-formula h3 {    
     font-size: 25px;
     text-align: center;
     margin-top: 35px;
@@ -227,8 +224,7 @@ footer {
     gap: 190px;       
 }
 
-.container-footer img {
-    
+.container-footer img {    
     width: 80px;
     height: 20px; 
 }
@@ -248,6 +244,7 @@ footer {
 }
 
 .icon-calculadora {
+    display: none;
     position: absolute;
     top: 877px;
     right: 960px;
@@ -256,8 +253,9 @@ footer {
 /*showModal*/
 
 .container-modal {
-    width: 500px;
     margin: auto;
+    width: 500px;
+    height: 10px;   
 }
 
 form {
@@ -273,7 +271,11 @@ form {
 .modal-disjuntor {
     border: 1px solid rgba(255, 255, 255, 0.5);
     width: 700px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translate(-15%, -120%);
+    transition: 2s;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    background-color: #7a7878;    
+    z-index: 0;    
 }
 
 .modal-potencia h3,
@@ -284,7 +286,6 @@ form {
 .modal-disjuntor h3 {
     margin: 3px;
     padding: 25px;      
-    font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
     color: #FFFFFF;
 }
@@ -301,17 +302,16 @@ form {
     
 }
 
-.result-modal {      
-    align-items: center;
+.result-modal {  
+    text-align: center; 
+    font-size: 15px;       
     width: 140px;
     height: 33px;
     border-radius: 8px;
     background-color: rgba(207, 164, 114, 0.8);
     padding: 10px;
     margin: auto;
-    border: 1px solid rgba(255, 255, 255, 0.6);   
-    font-size: 30px;    
-    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid rgba(255, 255, 255, 0.6);      
 }
 
 .label-modal {
@@ -329,7 +329,6 @@ input {
 .button-calc {
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
     color: #FFFFFF;
     border-radius: 8px;
     border: none;
@@ -348,8 +347,9 @@ input {
 }
 
 .button-back {
+    border: none;
     background-color: transparent;
-    margin-top: 8px;
+    margin: 10px 8px;
     cursor: pointer;
 }
 
@@ -378,8 +378,185 @@ input {
     display: none;    
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  
+    z-index: 1;  
+}
 
 
+@media (max-width: 440px) {
+
+    .container {
+        margin: 0 auto;
+        width: 315px;                        
+    }
+
+    .text img{
+        height: 140px;
+        margin: 0 auto;
+    }
+
+    .img-male {
+        display: none;
+    }
+
+    .icon-onda {
+        left: 280px;
+        top: -20px;
+    }
+    
+    .icon-onda img {
+        width: 30px;
+        height: 19px;
+    }
+    
+    .icon-play {
+        left: 250px;  
+        top: 220px;  
+    }
+    
+    .icon-play img {
+        width: 35px;
+        height: 40px;
+    }
+    
+    .icon-plus {
+        left: -13px;
+        top: 230px;
+    }
+    
+    .icon-plus img {
+        width: 21px;
+        height: 21px;    
+    }
+    
+    .icon-circulo {
+        left: -15px;
+        top: 60px;
+    }
+    
+    .icon-circulo img {
+        width: 25px;
+        height: 30px;
+    }
+
+    .text-info {
+        margin: 0;
+    }
+
+    .text-info p {
+        margin: 0;
+        width: 296px;
+        padding: 17px;
+        font-size: 12px;
+        color: #FFFFFF;        
+        
+    }
+
+    .text-formula h3 {
+        margin: 30px 0;
+    }
+
+    .container-fomr {
+        width: 310px;
+        height: 350px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 30px auto;
+    } 
+
+    .elementos {
+        margin-top: 5px;
+    }
+
+    .elementos h3 {
+        font-size: 12px;
+    }    
+    
+    .elementos p {
+        color: rgb(255, 255, 255);
+        opacity: 0.7;
+        font-size: 10px;
+        margin-top: 13px;
+      }
+    
+      
+    .icons-potencia,
+    .icons-corrente,
+    .icons-consumo,
+    .icons-tensao,
+    .icons-distancia,
+    .icons-disjuntor {
+        width: 50px;
+        height: 50px;    
+        border-radius: 50%;
+        margin: 10px auto;
+    }
+    
+    .icons-potencia img,
+    .icons-corrente img,
+    .icons-consumo img,
+    .icons-tensao img,
+    .icons-distancia img,
+    .icons-disjuntor img {   
+        margin: 15px auto;
+    }
+
+    .modal-potencia,
+    .modal-consumo,
+    .modal-corrente,
+    .modal-tensao,
+    .modal-distancia,
+    .modal-disjuntor {
+        margin: 0 auto;        
+        width: 350px;                      
+             
+    }
+
+   .text-title {
+        margin: 0 auto;
+    }
+
+    .text-title h3 {
+        font-size: 25px;
+    }
+    
+    .result-modal {
+        position: absolute;
+        bottom: 17px;
+        left: 200px;
+        width: 120px;
+        height: 20px;
+    }
+
+
+    
+    .icon-calculadora {
+        display: none;
+    }
+
+
+    .button-icons {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .container-footer {
+        display: block;
+        text-align: center;              
+    }
+
+    .footer-bnt {
+        margin-bottom: 10px;
+    }     
+    
+}
 
 
 
